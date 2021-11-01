@@ -10,7 +10,6 @@ function giveQuestions(){
     let lenght = questions.length;
 
     randQuestion(lenght,questions);
-    //Average();
 }
 
 function randQuestion(lenght,questions){
@@ -20,7 +19,6 @@ function randQuestion(lenght,questions){
 function Correct() {
     corect++;
     correcttext.innerHTML = `Correct: ${corect}`
-    Average(corect, wrongNumber);
     if(wrongNumber > corect) {
         body.style.background = 'red'
     } else if (corect === wrongNumber){
@@ -34,7 +32,6 @@ function Correct() {
 function Wrong() {
         wrongNumber = wrongNumber + 1;;
         wrong.textContent = `Wrong: ${wrongNumber}`
-        Average(corect, wrongNumber);
         if(wrongNumber > corect) {
             body.style.background = 'red'
         } else if (corect === wrongNumber){
@@ -57,12 +54,6 @@ function resetPoints() {
 
 document.querySelector('.reset').addEventListener('click', resetPoints)
 document.querySelector('.givewrong').addEventListener('click', Wrong);
-    
-function Average(corect, wrongNumber) {
-    let average = (corect + wrongNumber)
-    document.querySelector('.avrege').textContent = `Average: ${percent}%`;
-}
-
 
 let questions = [
     "Formula za pitagorov izrek",
