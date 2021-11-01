@@ -1,0 +1,97 @@
+html, body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.question {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pointsText {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.pointsBtn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15rem;
+    right: 9rem;
+
+}
+
+.resetBtn{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 100px;
+}
+
+.reset {
+    padding: 20px;
+    width: 20rem;
+    border: 2px solid black;
+    background-color: rgba(60, 60, 60, 0.5);
+    font-weight: bold;
+}
+
+.reset:active {
+    transform: translateY(3px);
+}
+
+.givewrong {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgba(60, 60, 60, 0.5);
+    font-weight: bold;
+}
+.givewrong:active {
+    transform: translateY(2px);
+}
+
+.giveCorrect {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgba(60, 60, 60, 0.5);
+    font-weight: bold;
+}
+.giveCorrect:active {
+    transform: translateY(2px);
+}
+
+.btnGive {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgba(60, 60, 60, 0.5);
+    font-weight: bold;
+}
+.btnGive:active {
+    transform: translateY(2px);
+}
